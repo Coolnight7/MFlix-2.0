@@ -1,59 +1,96 @@
-# MovieWatcher
+# 🎬 MFlix - Movie Watchlist Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
+---
 
-## Development server
+## 📌 Introduction
+MFlix is a **Movie Watchlist Web Application** built using **Angular (Frontend)** and **Spring Boot (Backend)** with **PostgreSQL Database**.  
+It provides users with an **attractive UI** to **track movies**, **add them to a watchlist**, **update details**, and **manage their movie collection** seamlessly.
 
-To start a local development server, run:
+---
+
+## 🛠️ Technologies Used
+- **Frontend:** Angular, TypeScript, HTML, CSS  
+- **Backend:** Spring Boot (Java), REST API  
+- **Database:** PostgreSQL  
+- **Build Tools:** Maven, Node.js & NPM  
+- **Version Control:** Git & GitHub  
+
+---
+
+## ✨ Features
+- 📃 **View all movies** in the watchlist  
+- ➕ **Add new movies** with details (title, genre, year, etc.)  
+- ✏️ **Update movie details** easily  
+- ❌ **Delete movies** from the watchlist  
+- 🎨 **Attractive and responsive UI** for a smooth user experience  
+- 🔗 **RESTful API integration** between Angular & Spring Boot  
+
+---
+
+## 📋 Prerequisites
+Make sure you have the following installed on your system:  
+
+- [Java 17+](https://adoptopenjdk.net/)  
+- [Maven](https://maven.apache.org/)  
+- [PostgreSQL](https://www.postgresql.org/download/)  
+- [Node.js & NPM](https://nodejs.org/)  
+- [Angular CLI](https://angular.io/cli)  
+
+---
+
+## 🔌 Ports Used
+- **Spring Boot Backend:** `http://localhost:8080/`  
+- **Angular Frontend:** `http://localhost:4200/`  
+- **PostgreSQL Database:** Default port `5432`  
+
+---
+
+## ▶️ Commands to Run
+
+## Backend
 
 ```bash
+cd backend
+mvn spring-boot:run
+
+```
+## Frontend
+
+```bash
+npm install
 ng serve
+
 ```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🖼️ Output / Screenshots
 
-## Code scaffolding
+### 🚀 Splash Screen
+![Splash Screen](./screenshots/splash.png)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 🏠 Home Page
+![Home Page](./screenshots/home.png)
 
-```bash
-ng generate component component-name
-```
+### 📃 Movie List
+![Movie List](./screenshots/list.png)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### ➕ Add New Movie
+![Add Movie](./screenshots/add.png)
 
-```bash
-ng generate --help
-```
+### ✏️ Edit Movie
+![Edit Movie](./screenshots/edit.png)
 
-## Building
+### ❌ Delete Confirmation
+![Delete Movie](./screenshots/delete.png)
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 📞 Contact
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+For any queries or contributions, feel free to reach out:
 
-## Running unit tests
+- 👤 **Developer:** Amina Subhedar 
+- 📧 **Email:** aminasubhedar2022@gmail.com
+- 🔗 **GitHub:** https://github.com/Coolnight7  
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
