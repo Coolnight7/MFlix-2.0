@@ -1,0 +1,119 @@
+
+.list-container {
+  padding: 2rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--netflix-dark-gray);
+  padding-bottom: 1rem;
+}
+
+.list-header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.add-movie-btn {
+  background-color: var(--netflix-red);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.add-movie-btn:hover {
+  background-color: #fff;
+  color: var(--netflix-red);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
+}
+
+.plus-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.list-column-titles {
+  display: flex;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--netflix-light-gray);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.movie-row {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--netflix-dark-gray);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent; 
+}
+
+.movie-row:hover {
+  transform: scale(1.02);
+  background-color: #2a2a2a;
+  border-left: 4px solid var(--netflix-red);
+}
+
+
+.col-name { flex-basis: 30%; font-size: 1.2rem; font-weight: bold; }
+.col-genre { flex-basis: 30%; }
+.col-year { flex-basis: 10%; text-align: center; }
+.col-rating { flex-basis: 10%; text-align: center; font-weight: bold; }
+.col-actions { flex-basis: 20%; }
+
+.actions-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: transparent; 
+  border: 1px solid var(--netflix-light-gray);
+  color: var(--netflix-light-gray); 
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; 
+}
+.btn:hover {
+  color: #fff; 
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.btn-view:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}
+
+.btn-edit:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}
+
+.btn-delete:hover {
+  background-color: var(--netflix-red);
+  border-color: var(--netflix-red);
+  color: #fff; 
+}

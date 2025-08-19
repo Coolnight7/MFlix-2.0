@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap');
+
+:root {
+  --netflix-red: #E50914;
+  --netflix-black: #141414;
+  --netflix-dark-gray: #333;
+  --netflix-light-gray: #8c8c8c;
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-lato: 'Lato', sans-serif;
+}
+
+body {
+  background-color: var(--netflix-black);
+  color: #fff;
+  font-family: var(--font-lato);
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-bebas);
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--netflix-light-gray);
+}

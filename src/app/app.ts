@@ -1,11 +1,29 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
+import { RouterModule } from '@angular/router'; 
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [RouterOutlet, CommonModule], 
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('movieWatcher');
+export class AppComponent {
+  title = 'movie-flix'; 
+  showNavbar = true; 
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.showNavbar = event.urlAfterRedirects !== '/';
+      }
+    });
+  }
+
+    goHome(): void {
+    console.log('The goHome() button was clicked! Attempting to navigate to "/"');
+    this.router.navigate(['/']);
+    }
 }

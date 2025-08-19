@@ -1,0 +1,30 @@
+<div class="details-page-layout" *ngIf="movie">
+
+  <header class="details-header">
+    <h1>{{ movie.name }}</h1>
+  </header>
+
+  <section class="details-meta-bar">
+    <span>{{ movie.relYear }}</span>
+    <span class="separator">|</span>
+    <span>{{ movie.genre }}</span>
+    <span class="separator">|</span>
+    <span>⭐ {{ movie.rating || 'N/A' }}</span>
+  </section>
+
+  <main class="details-body">
+    <p class="description" *ngIf="movie.description">
+      {{ movie.description }}
+    </p>
+
+    <div class="actions">
+      <a routerLink="/movies/edit/{{ movie.id }}" class="btn btn-primary">Edit</a>
+      <a routerLink="/movies" class="btn btn-secondary">Back to List</a>
+    </div>
+  </main>
+
+</div>
+
+<div class="container mt-4 text-center" *ngIf="!movie">
+  <p>Loading movie details...</p>
+</div>
